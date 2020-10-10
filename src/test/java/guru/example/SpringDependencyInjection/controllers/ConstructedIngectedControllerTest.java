@@ -1,10 +1,8 @@
 package guru.example.SpringDependencyInjection.controllers;
 
-import guru.example.SpringDependencyInjection.services.GreetingServiceImpl;
+import guru.example.SpringDependencyInjection.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ConstructedIngectedControllerTest {
 
@@ -12,7 +10,7 @@ class ConstructedIngectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructedIngectedController(new GreetingServiceImpl());
+        controller = new ConstructedIngectedController(new ConstructorGreetingService());
     }
 
     @Test

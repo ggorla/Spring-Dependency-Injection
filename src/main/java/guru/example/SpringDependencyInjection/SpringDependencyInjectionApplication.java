@@ -16,8 +16,8 @@ public class SpringDependencyInjectionApplication {
 		ApplicationContext ctx = SpringApplication.run(SpringDependencyInjectionApplication.class, args);
 		MyController myController = (MyController) ctx.getBean("myController");
 
-		String greeting = myController.sayHello();
-		System.out.println(greeting);
+		System.out.println("-- from parimary bean");
+		System.out.println(myController.sayHello());
 
 
 		System.out.println("---property");
