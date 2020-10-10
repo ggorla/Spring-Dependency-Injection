@@ -1,2 +1,6 @@
-package guru.example.SpringDependencyInjection.services;public interface GreetingService {
+package guru.example.SpringDependencyInjection.services;
+
+public interface GreetingService {
+    String sayGreeting();
 }
+
